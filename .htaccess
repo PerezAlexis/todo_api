@@ -1,0 +1,17 @@
+# Deshabilita el redireccionamiento automático “sin slash” → “slash”
+DirectorySlash Off
+
+# Evita listar directorios
+Options -Indexes
+
+# Arranca el motor de reescritura
+RewriteEngine On
+RewriteBase /todo_api/
+
+# Si la petición NO es a un archivo real…
+RewriteCond %{REQUEST_FILENAME} !-f
+# …y NO es a un directorio real
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Entonces redirígelo a api.php, pasándole la ruta tras /todo_api/
+RewriteRule ^(.*)$ api.php/$1 [L,QSA]
