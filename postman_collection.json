@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "736d902a-5ea6-4827-aaab-79773131c96b",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45457118"
+	},
+	"item": [
+		{
+			"name": "LIstar Tareas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/todo_api/tareas\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"todo_api",
+						"tareas\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Tarea",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
